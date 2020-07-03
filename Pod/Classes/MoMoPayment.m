@@ -217,9 +217,9 @@ static NSMutableDictionary *paymentInfo = nil;
         if (paymentInfo[@"action"]) {
             inputParams = [NSString stringWithFormat:@"action=%@&partner=merchant&campaign=register",paymentInfo[@"action"]];
         }
-        [paymentInfo setValue:[MoMoConfig getMerchantcode]          forKey:MOMO_PAY_CLIENT_MERCHANT_CODE_KEY];
-        [paymentInfo setValue:[MoMoConfig getMerchantname]       forKey:MOMO_PAY_CLIENT_MERCHANT_NAME_KEY];
-        [paymentInfo setValue:[MoMoConfig getMerchantnameLabel]  forKey:MOMO_PAY_CLIENT_MERCHANT_NAME_LABEL_KEY];
+        //[paymentInfo setValue:[MoMoConfig getMerchantcode]          forKey:MOMO_PAY_CLIENT_MERCHANT_CODE_KEY];
+        //[paymentInfo setValue:[MoMoConfig getMerchantname]       forKey:MOMO_PAY_CLIENT_MERCHANT_NAME_KEY];
+        //[paymentInfo setValue:[MoMoConfig getMerchantnameLabel]  forKey:MOMO_PAY_CLIENT_MERCHANT_NAME_LABEL_KEY];
         [paymentInfo setValue:@""          forKey:MOMO_PAY_CLIENT_PUBLIC_KEY_KEY];
         [paymentInfo setValue:[MoMoConfig getIPAddress]          forKey:MOMO_PAY_CLIENT_IP_ADDRESS_KEY];
         [paymentInfo setValue:[self getDeviceInfoString]   forKey:MOMO_PAY_CLIENT_OS_KEY];
